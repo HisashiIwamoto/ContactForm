@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>お問い合わせフォーム</title>
+  <title>入力画面</title>
 </head>
 <style>
   body {
@@ -24,13 +24,14 @@
     margin: 0 auto;
     width: 20vw;
   }
-  .error{
+
+  .error {
     color: red;
   }
 </style>
 
 <body>
-  <h1>入力画面</h1>
+  <h1>入力内容の編集</h1>
   <form action="conf.php" method="POST">
     <div class="name">
       <p><input type="text" name="name" value="<?= $name ?>" placeholder="名前"></p>
@@ -73,8 +74,7 @@
                                                                 } ?>>同意する</label></p>
       <p class="error"><?= $error['accept']; ?></p>
     </div>
-    <button>内容確認</button>
-  </form>
+    <button>send</button>
 </body>
 
 </html>

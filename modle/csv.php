@@ -6,7 +6,13 @@ $body = trim(filter_input(INPUT_POST, 'body'));
 $works = trim(filter_input(INPUT_POST, 'works'));
 $gender = trim(filter_input(INPUT_POST, 'gender'));
 $accept = trim(filter_input(INPUT_POST, 'accept'));
-
+session_start();
+$name = $_SESSION['name'];
+$mail = $_SESSION['mail'];
+$body = $_SESSION['body'];
+$works = $_SESSION['works'];
+$gender = $_SESSION['gender'];
+$accept = $_SESSION['accept'];
 $inputtext = [
   array(
     $name,
