@@ -45,7 +45,6 @@
     <p>仕事:&nbsp;<?= $works; ?></p>
     <p>性別:&nbsp;<?= $gender; ?></p>
     <p>同意:&nbsp;<?= $accept; ?></p>
-    <a href="http://localhost:8888/index.php">最初からやり直し</a>
     <form action="edit.php" method="post">
       <button>編集</button>
     </form>

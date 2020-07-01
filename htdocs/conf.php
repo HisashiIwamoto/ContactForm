@@ -18,6 +18,7 @@ $_SESSION['body'] = $body;
 $_SESSION['works'] = $works;
 $_SESSION['gender'] = $gender;
 $_SESSION['accept'] = $accept;
+
 $check = new Check;
 
 if (!empty($_POST)) {
