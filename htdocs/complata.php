@@ -28,6 +28,10 @@ $_SESSION['gender'] = $gender;
 $_SESSION['accept'] = $accept;
 */
 
-db($data);
+$csv = new CSV;
+$csv->csv($data);
+$db = new FormDB;
+
+$db->db($data);
 
 include "../view/complatahtml.php";
